@@ -199,7 +199,7 @@ nav a {
 /*-----products-------*/
 
 .products {
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/bg3.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/bg4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -225,21 +225,18 @@ nav a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin: 60px;
 }
 
 .coffee-info {
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/bg4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur;
   width: 240px;
   height: 400px;
   text-align: center;
   border-radius: 30px;
   margin-bottom: 80px;
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
   border-color: white;
   border-width: 1px;
   border-style: solid;
@@ -250,6 +247,7 @@ nav a {
   border-color: white ;
   border-width: 2px;
   border-style: solid;
+  cursor: pointer;
 }
 
 .coffee-1 {
@@ -331,6 +329,9 @@ nav a {
   @media (max-width: 600px) {
     .product-row {
       grid-template-columns: auto;
+    }
+    .coffee-info {
+      margin-bottom: 3rem;
     }
   }
 
@@ -416,8 +417,8 @@ nav a {
 
   .about-info {
     font-size: 15px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
 }
